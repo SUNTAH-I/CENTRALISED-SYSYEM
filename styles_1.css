@@ -1,0 +1,92 @@
+/* Background styling */
+.root {
+    -fx-background-color: linear-gradient(to right, #00c6ff, #0070ff, #0072ff);
+    -fx-background-insets: 0, 0;
+    -fx-background-radius: 15px;
+    -fx-padding: 20px;
+}
+
+/* Text Field and Password Field */
+.text-field, .password-field {
+    -fx-font-size: 14px;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-pref-height: 40px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-text-fill: #333;
+    -fx-padding: 0 10px;
+    -fx-effect: innershadow(gaussian, #b0c4de, 2, 0.0, 0.0, 2);
+    -fx-border-color: #0072ff;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 1);
+    -fx-border-color: #005bbf;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #0072ff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;/*
+    -fx-pref-width: 150px;*/
+    -fx-pref-height: 40px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.0, 0.0, 2);
+    -fx-transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: #005bbf;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 8, 0.0, 0.0, 3);
+}
+
+/* Eye Button for Password Field */
+#eye-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: pointer;
+    -fx-padding: 5px;
+}
+
+#eye-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-background-radius: 5px;
+}
+
+/* General Hover Effects */
+.button:hover, .text-field:focused, .password-field:focused {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Center the UI components */
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+
+/* Labels styling */
+.label {
+    -fx-font-size: 16px;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Rounded corners for containers */
+.container {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 20px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.0, 0.0, 5);
+}
+
+/* Adding shadow effects */
+.shadow-effect {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0.0, 0.0, 5);
+}
